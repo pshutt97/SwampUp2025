@@ -46,12 +46,12 @@ jobs:
       # 5. Copy the "Show Snippet" YAML configuration
       # 6. Replace this commented section with the copied snippet
       #
-      # - name: Setup JFrog CLI
-      #   uses: jfrog/setup-jfrog-cli@v4
-      #   env:
-      #     JF_URL: ${{ vars.ARTIFACTORY_URL }}
-      #   with:
-      #     oidc-provider-name: jfrog-githuboidc
+      - name: Setup JFrog CLI
+        uses: jfrog/setup-jfrog-cli@v4
+        env:
+          JF_URL: ${{ vars.ARTIFACTORY_URL }}
+        with:
+          oidc-provider-name: jfrog-githuboidc
       
       # End Lab 1.1 #########################################################
 
