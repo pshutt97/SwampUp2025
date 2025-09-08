@@ -51,7 +51,7 @@ jobs:
         env:
           JF_URL: ${{ vars.ARTIFACTORY_URL }}
         with:
-          oidc-provider-name: jfrog-githuboidc
+          oidc-provider-name: jfrog-repos
       
       # End Lab 1.1 #########################################################
 
