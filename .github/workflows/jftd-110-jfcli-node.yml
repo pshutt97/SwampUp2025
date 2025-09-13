@@ -55,22 +55,6 @@ jobs:
       
       # End Lab 1.1 #########################################################
 
-      # Purpose: This step serves as a validation and debugging step to confirm that
-      # the OIDC authentication was successful and that the JFrog CLI setup step
-      # properly generated an access token. It only runs when the setup-jfrog-cli
-      # step successfully outputs an OIDC token, providing immediate feedback on
-      # the authentication status before proceeding with subsequent operations.
-      #
-      # Why it's important: This step helps troubleshoot OIDC integration issues
-      # early in the workflow and confirms that the JFrog CLI is properly configured
-      # with valid credentials before attempting to use it for npm operations.
-      #
-      - name: "Run only if value is present"
-        if: steps.setup-jfrog-cli.outputs.oidc-token != ''
-        run: |
-          echo "Access Token set as output to 'Get Artifactory Access Token and Setup JFrog CLI'"
-
-
       # Start Lab 2 - Generate a Job Summary of Github Actions Workflow #########################################################
       #
       # TODO: Lab 2.1 - Step 1 - Configure npm with JFrog CLI
