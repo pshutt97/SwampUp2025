@@ -1,6 +1,5 @@
 # https://jfrog.com/help/r/jfrog-platform-administration-documentation/sample-integration-of-jfrog-oidc-with-github-actions
 name: "JFTD-110-GitHub_Actions_for_JFrog: NPM Package with OIDC"
-description: "This workflow demonstrates how to use JFrog CLI with OIDC authentication to build and publish an NPM package, manage builds"
 on:
   workflow_dispatch:
   push:
